@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       <header className="sticky top-3 z-50 w-full flex items-center justify-center">
-        <nav className="flex flex-row items-center justify-between rounded-xl w-3/5 bg-white pl-4 py-1.5">
+        <nav className="flex flex-row items-center justify-between rounded-xl w-3/5 bg-white pl-4 py-1.5 ">
           <div className="">
             <Image src={revery} alt="Revery" width={108} height={108} />
           </div>
