@@ -4,6 +4,7 @@ import { Boxes } from "../ui/background-boxes";
 import IconStrip from "../ui/icon-strip"
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
+import Hero2 from "./Hero2";
 
 type HeroProps = unknown;
 
@@ -36,6 +37,7 @@ const Hero: FC<HeroProps> = () => {
           <IconStrip/>
         </div>
       </section>
+      <Hero2/>
     </>
   );
 };
