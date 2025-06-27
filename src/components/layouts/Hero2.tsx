@@ -1,4 +1,5 @@
 import React from "react";
+import Service from "./Service";
 
 const Hero2 = () => {
   return (
@@ -17,6 +18,7 @@ const Hero2 = () => {
           <p className="text-[#FF0303] hover:bg-[#FF0303] hover:text-white duration-500 cursor-pointer w-fit p-2">Tell us about your project</p>
         </div>
       </div>
+      <Service/>
     </>
   );
 };
