@@ -46,7 +46,7 @@ const MyComponent: React.FC<ComponentProps> = () => {
             </p>
           </div>
           <div className="w-1/2 flex items-end">
-            <Image src={ProdDevPic} alt="WebDevPic" />
+            <Image src={ProdDevPic} alt="ProdDevPic" />
           </div>
         </div>
         <div className="w-full h-fit flex flex-row items-center justify-between pr-32 text-[#0F072C]">
@@ -58,12 +58,31 @@ const MyComponent: React.FC<ComponentProps> = () => {
               Services
             </h1>
             <p>
-              Digital Strategy Advertising Content Creation<br />
+              Digital Strategy Advertising Content Creation
+              <br />
               <span className="font-semibold">and more...</span>
             </p>
           </div>
           <div className="w-1/2 flex items-end">
-            <Image src={DigiMarkPic} alt="WebDevPic" />
+            <Image src={DigiMarkPic} alt="DigiMarkPic" />
+          </div>
+        </div>
+        <div className="w-full h-fit flex flex-row-reverse items-center justify-between pl-32 text-[#0F072C]">
+          <div className="bg-[#F1EDFF] w-1/2 rounded-l-full pl-32 py-6 flex flex-row gap-8">
+            <h1 className="text-xl font-semibold">
+              UI/UX
+              <br />
+              Design <br />
+              Services
+            </h1>
+            <p>
+              UX Research Design Prototyping
+              <br />
+              <span className="font-semibold">and more...</span>
+            </p>
+          </div>
+          <div className="w-1/2 flex items-end">
+            <Image src={UiUxPic} alt="UiUXPic" />
           </div>
         </div>
       </section>
