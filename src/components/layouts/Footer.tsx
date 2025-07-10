@@ -1,7 +1,37 @@
+import Logo from "@/assesst/revery.png";
+import Image from "next/image";
+import { IoLogoFacebook } from "react-icons/io";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { AiFillTikTok } from "react-icons/ai";
+
 export const Footer = () => (
-  <footer className="flex items-center justify-center w-full h-24 border-t">
-    <div className="flex items-center justify-center">
-      <p>Copyright &copy; {new Date().getFullYear()} Revery. All rights reserved.</p>
+  <footer className="flex items-center justify-center w-full h-fit border-t px-32 py-8">
+    <div className="flex flex-col items-center justify-center gap-4 w-full">
+      <div className="w-full flex flex-row items-start justify-around">
+        <div>
+          <Image src={Logo} alt="logo" width={198} />
+          <div className="w-full flex flex-row justify-around items-center gap-1">
+            <IoLogoFacebook className="text-4xl" />
+            <PiInstagramLogoFill className="text-4xl" />
+            <AiFillTikTok className="text-4xl" />
+          </div>
+        </div>
+        <div>
+          <h1 className="font-bold">Company</h1>
+          <p>About</p>
+          <p>Service</p>
+          <p>Works</p>
+        </div>
+        <div>
+          <h1 className="font-bold">Legal</h1>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
+      </div>
+      <hr className="text-white w-full" />
+      <p className="font-bold">
+        &copy; Copyright {new Date().getFullYear()} Revery. All rights reserved.
+      </p>
     </div>
   </footer>
 );

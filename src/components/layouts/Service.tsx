@@ -4,6 +4,9 @@ import WebDevPic from "@/assesst/Item/Clip path group.png";
 import ProdDevPic from "@/assesst/Item/development-GLynLEZonm.png";
 import DigiMarkPic from "@/assesst/Item/Clip path group (1).png";
 import UiUxPic from "@/assesst/Item/creative-3d-visual-animation-website-development-f9bsAdYcsm.png";
+import { IoIosCall } from "react-icons/io";
+import { MdArrowRightAlt } from "react-icons/md";
+import { Footer } from "./Footer";
 
 type ComponentProps = unknown;
 
@@ -85,7 +88,22 @@ const MyComponent: React.FC<ComponentProps> = () => {
             <Image src={UiUxPic} alt="UiUXPic" />
           </div>
         </div>
+        <div className="w-full h-fit flex flex-col gap-4 items-center justify-center py-32">
+          <h1 className="text-5xl font-bold text-[#0F072C]">
+            How we can help?
+          </h1>
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-700 to-blue-600 bg-clip-text text-transparent">
+            Talk to our experts today.
+          </h1>
+          <p className="group bg-[#FF0303] text-3xl font-bold text-white  cursor-pointer w-fit px-8 py-4 flex flex-row items-center gap-2">
+            <IoIosCall className="group-hover:animate-shake" />
+            Contact Us
+            <MdArrowRightAlt/>
+          </p>
+        </div>
+
       </section>
+      <Footer/>
     </>
   );
 };
