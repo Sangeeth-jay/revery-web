@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import WebDevPic from "@/assesst/Item/Clip path group.png";
-import ProdDevPic from "@/assesst/Item/development-GLynLEZonm.png";
-import DigiMarkPic from "@/assesst/Item/Clip path group (1).png";
-import UiUxPic from "@/assesst/Item/creative-3d-visual-animation-website-development-f9bsAdYcsm.png";
+import WebDevPic from "@/assesst/Item/web-designing.gif";
+import ProdDevPic from "@/assesst/Item/product-devlopment.gif";
+import DigiMarkPic from "@/assesst/Item/digital-marketing.gif";
+import UiUxPic from "@/assesst/Item/uiux-designing.gif";
 import { IoIosCall } from "react-icons/io";
 import { MdArrowRightAlt } from "react-icons/md";
 import { Footer } from "./Footer";
@@ -30,8 +30,8 @@ const MyComponent: React.FC<ComponentProps> = () => {
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex items-end">
-            <Image src={WebDevPic} alt="WebDevPic" />
+          <div className="w-1/2 flex flex-col items-end">
+            <Image src={WebDevPic} alt="WebDevPic" className="w-3/4" />
           </div>
         </div>
         <div className="w-full h-fit flex flex-row-reverse items-center justify-between pl-32 text-[#0F072C]">
@@ -48,8 +48,8 @@ const MyComponent: React.FC<ComponentProps> = () => {
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex items-end">
-            <Image src={ProdDevPic} alt="ProdDevPic" />
+          <div className="w-1/2 flex flex-col items-start">
+            <Image src={ProdDevPic} alt="ProdDevPic" className="w-3/4" />
           </div>
         </div>
         <div className="w-full h-fit flex flex-row items-center justify-between pr-32 text-[#0F072C]">
@@ -66,8 +66,8 @@ const MyComponent: React.FC<ComponentProps> = () => {
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex items-end">
-            <Image src={DigiMarkPic} alt="DigiMarkPic" />
+          <div className="w-1/2 flex flex-col items-end">
+            <Image src={DigiMarkPic} alt="DigiMarkPic" className="w-3/4" />
           </div>
         </div>
         <div className="w-full h-fit flex flex-row-reverse items-center justify-between pl-32 text-[#0F072C]">
@@ -84,8 +84,8 @@ const MyComponent: React.FC<ComponentProps> = () => {
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex items-end">
-            <Image src={UiUxPic} alt="UiUXPic" />
+          <div className="w-1/2 flex flex-col items-start">
+            <Image src={UiUxPic} alt="UiUXPic" className="w-3/4" />
           </div>
         </div>
         <div className="w-full h-fit flex flex-col gap-4 items-center justify-center py-32">

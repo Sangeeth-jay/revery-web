@@ -18,14 +18,14 @@ export const Footer = () => (
         </div>
         <div>
           <h1 className="font-bold">Company</h1>
-          <p>About</p>
-          <p>Service</p>
-          <p>Works</p>
+          <p className="font-thin">About</p>
+          <p className="font-thin">Service</p>
+          <p className="font-thin">Works</p>
         </div>
         <div>
           <h1 className="font-bold">Legal</h1>
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
+          <p className="font-thin">Privacy Policy</p>
+          <p className="font-thin">Terms & Conditions</p>
         </div>
       </div>
       <hr className="text-white w-full" />
