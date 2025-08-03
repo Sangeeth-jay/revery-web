@@ -33,10 +33,10 @@ const items = [
 const iconStrip = () => {
   return (
     <>
-      <div className="relative z-20 flex flex-col gap-4 items-center justify-center w-full px-32">
+      <div className="relative z-20 flex flex-col gap-4 items-center justify-center w-full">
         <p className="text-[#482FA3] text-lg font-semibold">We’re experts in</p>
         <Marquee speed={30} gradient={false}>
-          <div className="w-full flex flex-row items-center justify-center gap-9">
+          <div className="w-full flex flex-row items-center justify-around gap-9">
             {items.map((item, index) => (
               <Image
                 key={index}
