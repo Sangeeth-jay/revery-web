@@ -11,7 +11,7 @@ export const HeaderF = () => {
   return (
     <>
       <header className=" w-full bg-transparent flex flex-col items-center justify-center">
-        <nav className="w-full flex flex-row-reverse items-center justify-between px-4 md:px-8 py-2 md:py-4  backdrop-blur-xs">
+        <nav className="w-full flex flex-row-reverse items-center justify-between px-4 md:px-8 py-4 md:py-4  backdrop-blur-xs">
           <Image src={revery} alt="Revery" width={132} />
           <div>
             <BurgerBtn isOpen = {isOpen} setIsOpen={setIsOpen} />

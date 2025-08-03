@@ -5,9 +5,9 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 import { AiFillTikTok } from "react-icons/ai";
 
 export const Footer = () => (
-  <footer className="flex items-center justify-center w-full h-fit border-t px-32 py-8">
+  <footer className="flex items-center justify-center w-full h-fit border-t px-4 md:px-16 lg:px-32 py-8">
     <div className="flex flex-col items-center justify-center gap-4 w-full">
-      <div className="w-full flex flex-row items-start justify-around">
+      <div className="w-full flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-start justify-around gap-4">
         <div>
           <Image src={Logo} alt="logo" width={198} />
           <div className="w-full flex flex-row justify-around items-center gap-1">
@@ -16,13 +16,13 @@ export const Footer = () => (
             <AiFillTikTok className="text-4xl" />
           </div>
         </div>
-        <div>
+        <div className="flex flex-col items-center md:items-start lg:items-start">
           <h1 className="font-bold">Company</h1>
           <p className="font-thin">About</p>
           <p className="font-thin">Service</p>
           <p className="font-thin">Works</p>
         </div>
-        <div>
+        <div className="flex flex-col items-center md:items-start lg:items-start">
           <h1 className="font-bold">Legal</h1>
           <p className="font-thin">Privacy Policy</p>
           <p className="font-thin">Terms & Conditions</p>

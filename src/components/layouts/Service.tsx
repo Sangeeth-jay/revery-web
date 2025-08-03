@@ -55,8 +55,8 @@ const MyComponent: React.FC<ComponentProps> = () => {
           </div>
         </div>
         <div className="w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row items-center justify-between md:pr-16 lg:pr-32 text-[#0F072C]">
-          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 rounded-r-full px-4 md:pl-16 lg:pl-32 py-6 flex flex-col md:flex-rowlg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
-            <h1 className="text-xl font-semibold hidden  lg:block">
+          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 rounded-r-full px-4 md:pl-16 lg:pl-32 py-6 flex flex-col md:flex-row lg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
+            <h1 className="text-xl font-semibold hidden lg:block">
               Digital
               <br />
               Marketing <br />
