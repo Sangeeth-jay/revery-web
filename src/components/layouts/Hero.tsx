@@ -4,7 +4,7 @@ import { Boxes } from "../ui/background-boxes";
 import IconStrip from "../ui/icon-strip";
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
-import Hero2 from "./Hero2";
+// import Hero2 from "./Hero2";
 import { HeaderF } from "./HeaderF";
 import HeaderM from "./HeaderM";
 
