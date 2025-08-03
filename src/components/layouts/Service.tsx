@@ -14,82 +14,86 @@ const MyComponent: React.FC<ComponentProps> = () => {
   return (
     <>
       <section className="w-full bg-white">
-        <div className="w-full h-fit flex flex-row items-center justify-center bg-[#0F072C] px-32 py-6">
+        <div className="w-full h-fit flex flex-row items-center justify-center bg-[#0F072C] px-4 md:px-16 lg:px-32 py-6">
           <h1 className="text-3xl font-bold">We Provide</h1>
         </div>
-        <div className="w-full h-fit flex flex-row items-center justify-between pr-32 text-[#0F072C]">
-          <div className="bg-[#F1EDFF] w-1/2 rounded-r-full pl-32 py-6 flex flex-row gap-8">
-            <h1 className="text-xl font-semibold">
+        <div className="w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row items-center justify-between md:pr-16 lg:pr-32 text-[#0F072C]">
+          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 md:rounded-r-full lg:rounded-r-full px-4  md:pl-16 lg:pl-32 py-6 flex flex-col lg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
+            <h1 className="text-xl font-semibold hidden lg:block">
               Web <br />
               Development <br />
               Services
             </h1>
-            <p>
+            <h1 className="text-xl font-semibold lg:hidden">Web Development Services</h1>
+            <p className="text-sm">
               MERN Stack WordPress SEO optimizing Framer
               <br />
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex flex-col items-end">
+          <div className="w-1/2 flex flex-col items-center md:items-end lg:items-end">
             <Image src={WebDevPic} alt="WebDevPic" className="w-3/4" />
           </div>
         </div>
-        <div className="w-full h-fit flex flex-row-reverse items-center justify-between pl-32 text-[#0F072C]">
-          <div className="bg-[#F1EDFF] w-1/2 rounded-l-full pl-32 py-6 flex flex-row gap-8">
-            <h1 className="text-xl font-semibold">
+        <div className="w-full h-fit flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse items-center justify-between md:pl-16 lg:pl-32 text-[#0F072C]">
+          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 rounded-l-full px-4 md:pr-16 md:pl-8 lg:pr-32 py-6 flex flex-col lg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
+            <h1 className="text-xl font-semibold text-right hidden lg:block">
               Product
               <br />
               Development <br />
               Services
             </h1>
-            <p>
-              MERN Stack Flutter Java PHP
+            <h1 className="text-xl font-semibold lg:hidden">Product Development Services</h1>
+            <p className="text-sm">
+              MERN Stack Flutter Java PHP Python
               <br />
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex flex-col items-start">
+          <div className="w-1/2 flex flex-col items-center md:items-start lg:items-start">
             <Image src={ProdDevPic} alt="ProdDevPic" className="w-3/4" />
           </div>
         </div>
-        <div className="w-full h-fit flex flex-row items-center justify-between pr-32 text-[#0F072C]">
-          <div className="bg-[#F1EDFF] w-1/2 rounded-r-full pl-32 py-6 flex flex-row gap-8">
-            <h1 className="text-xl font-semibold">
+        <div className="w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row items-center justify-between md:pr-16 lg:pr-32 text-[#0F072C]">
+          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 rounded-r-full px-4 md:pl-16 lg:pl-32 py-6 flex flex-col md:flex-rowlg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
+            <h1 className="text-xl font-semibold hidden  lg:block">
               Digital
               <br />
               Marketing <br />
               Services
             </h1>
-            <p>
+            <h1 className="text-xl font-semibold lg:hidden">Digital Marketing Services</h1>
+            <p className="text-sm">
               Digital Strategy Advertising Content Creation
               <br />
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex flex-col items-end">
+          <div className="w-1/2 flex flex-col items-center md:items-end lg:items-end">
             <Image src={DigiMarkPic} alt="DigiMarkPic" className="w-3/4" />
           </div>
         </div>
-        <div className="w-full h-fit flex flex-row-reverse items-center justify-between pl-32 text-[#0F072C]">
-          <div className="bg-[#F1EDFF] w-1/2 rounded-l-full pl-32 py-6 flex flex-row gap-8">
-            <h1 className="text-xl font-semibold">
+        <div className="w-full h-fit flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse items-center justify-between md:pl-16 lg:pl-32 text-[#0F072C]">
+          <div className="md:bg-[#F1EDFF] lg:bg-[#F1EDFF] w-full md:w-1/2 lg:w-1/2 rounded-l-full px-4 md:pr-16 md:pl-8 lg:pl-8 lg:pr-32 py-6 flex flex-col lg:flex-row items-center gap-2 md:gap-2 lg:gap-8">
+            <h1 className="text-xl font-semibold text-right hidden lg:block">
               UI/UX
               <br />
               Design <br />
               Services
             </h1>
-            <p>
-              UX Research Design Prototyping
+            <h1 className="text-xl font-semibold lg:hidden">UI/UX Design Services</h1>
+            <p className="text-sm">
+              UX Research Design Prototyping & Wireframing
               <br />
               <span className="font-semibold">and more...</span>
             </p>
           </div>
-          <div className="w-1/2 flex flex-col items-start">
+          <div className="w-1/2 flex flex-col items-center md:items-start lg:items-start">
             <Image src={UiUxPic} alt="UiUXPic" className="w-3/4" />
           </div>
         </div>
-        <div className="w-full h-fit flex flex-col gap-4 items-center justify-center py-32">
-          <h1 className="text-5xl font-bold text-[#0F072C]">
+        <div className="w-full h-fit text-center flex flex-col gap-4 items-center justify-center px-4 py-8 md:py-16 lg:py-32">
+          <h1 className="text-5xl font-bold text-[#0F072C] ">
             How we can help?
           </h1>
           <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-700 to-blue-600 bg-clip-text text-transparent">

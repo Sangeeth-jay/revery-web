@@ -4,7 +4,7 @@ import { Boxes } from "../ui/background-boxes";
 import IconStrip from "../ui/icon-strip";
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
-// import Hero2 from "./Hero2";
+import Hero2 from "./Hero2";
 import { HeaderF } from "./HeaderF";
 import HeaderM from "./HeaderM";
 
@@ -27,9 +27,9 @@ const Hero: FC<HeroProps> = () => {
         <div className="sticky top-0 lg:hidden">
           <HeaderM />
         </div>
-        <div className="flex flex-col items-center justify-center px-4 md:px-16 lg:px-32 lg:mt-12">
+        <div className="h-screen flex flex-col items-center justify-center px-4 md:px-16 lg:px-32 ">
           <div className="flex flex-col gap-3">
-            <p className={cn("text-6xl md:text-5xl lg:text-6xl font-bold text-center relative z-20")}>
+            <p className={cn("text-4xl md:text-5xl lg:text-6xl font-bold text-center relative z-20")}>
               Crafting Unique Digital Experiences and Driving Your Business{" "}
               <br />
               <span className="bg-gradient-to-r from-orange-700 to-blue-600 bg-clip-text text-transparent">
@@ -45,7 +45,7 @@ const Hero: FC<HeroProps> = () => {
           <IconStrip />
         </div>
       </section>
-      {/* <Hero2 /> */}
+      <Hero2 />
     </>
   );
 };
