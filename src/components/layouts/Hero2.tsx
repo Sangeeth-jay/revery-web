@@ -4,7 +4,7 @@ import Service from "./Service";
 const Hero2 = () => {
   return (
     <>
-      <div className="h-fit w-full bg-white text-[#0F072C] flex flex-col md:flex-row lg:flex-row items-center justify-center px-4 md:px-16 lg:px-32 py-8 md:py-16 lg:py-24 gap-8">
+      <div id="about" className="h-fit w-full bg-white text-[#0F072C] flex flex-col md:flex-row lg:flex-row items-center justify-center px-4 md:px-16 lg:px-32 py-8 md:py-16 lg:py-24 gap-8">
         <div className="w-full lg:w-1/3 text-center md:text-left lg:text-left">
           <h1 className="text-5xl font-bold">A New Venture with Deep Expertise</h1>
         </div>

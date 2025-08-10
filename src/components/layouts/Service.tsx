@@ -13,7 +13,7 @@ type ComponentProps = unknown;
 const MyComponent: React.FC<ComponentProps> = () => {
   return (
     <>
-      <section className="w-full bg-white">
+      <section id="service" className="w-full bg-white">
         <div className="w-full h-fit flex flex-row items-center justify-center bg-[#0F072C] px-4 md:px-16 lg:px-32 py-6">
           <h1 className="text-3xl font-bold">We Provide</h1>
         </div>

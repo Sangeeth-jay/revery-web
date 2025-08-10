@@ -22,7 +22,7 @@ const Hero: FC<HeroProps> = () => {
           <HeaderF />
         </div>
       </nav>
-      <section className="h-screen relative w-full overflow-hidden">
+      <section id="home" className="h-screen relative w-full overflow-hidden">
         <Boxes />
         <div className="sticky top-0 lg:hidden">
           <HeaderM />
