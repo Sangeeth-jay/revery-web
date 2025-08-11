@@ -28,9 +28,14 @@ const Hero: FC<HeroProps> = () => {
     <>
       {" "}
       <nav className="">
-        <div className="hidden lg:block">
+        <motion.div
+          className="hidden lg:block"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <Header />
-        </div>
+        </motion.div>
         <div className="hidden lg:block">
           <HeaderF />
         </div>
@@ -75,7 +80,7 @@ const Hero: FC<HeroProps> = () => {
             </h1>
             <motion.h1
               className="md:text-md lg:text-lg text-center relative z-20"
-              initial={{ opacity: 0, y: (-20) }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: words.length * 0.2, duration: 0.5 }}
             >
