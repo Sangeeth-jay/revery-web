@@ -78,6 +78,7 @@ export const FloatingNav = ({
           ))}
         </div>
         <button
+          onClick={() => window.open("https://wa.me/+94725050191", "_blank")}
           type="button"
           className="focus:outline-none cursor-pointer text-white text-md font-medium bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-sm px-5 py-2.5 me-1.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
         >

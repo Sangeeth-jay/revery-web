@@ -7,11 +7,24 @@ import UiUxPic from "@/assesst/Item/uiux-designing.gif";
 import { IoIosCall } from "react-icons/io";
 import { MdArrowRightAlt } from "react-icons/md";
 import { Footer } from "./Footer";
-import { motion } from "motion/react";
+import { motion, useAnimation } from "motion/react";
 
 type ComponentProps = unknown;
 
+const shakeAnimation = {
+  rotate: [0, -10, 10, -10, 10, 0],
+  transition: { duration: 0.5, repeat: Infinity, ease: "easeInOut" },
+};
+
+const shakeAnimation2 = {
+  x: [0, -5, 5, -5, 5, 0],
+  transition: { duration: 0.5, repeat: Infinity, ease: "easeInOut" },
+};
+
 const MyComponent: React.FC<ComponentProps> = () => {
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+
   return (
     <>
       <section id="service" className="w-full bg-white overflow-x-hidden">
@@ -129,14 +142,37 @@ const MyComponent: React.FC<ComponentProps> = () => {
           <h1 className="text-5xl font-bold text-[#0F072C] ">
             How we can help?
           </h1>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-700 to-blue-600 bg-clip-text text-transparent">
+          <h1
+            className="text-5xl font-bold text-transparent bg-clip-text moving-gradient"
+            style={{
+              backgroundImage:
+                "linear-gradient(270deg, #c2410c, #2563eb, #c2410c)",
+            }}
+          >
             Talk to our experts today.
           </h1>
-          <p className="group bg-[#FF0303] text-3xl font-bold text-white  cursor-pointer w-fit px-8 py-4 flex flex-row items-center gap-2">
-            <IoIosCall className="group-hover:animate-shake" />
+          <motion.button
+            onClick={() => {
+              window.open("https://wa.me/+94725050191", "_blank");
+            }}
+            className="group bg-[#FF0303] text-3xl font-bold text-white  cursor-pointer w-fit px-8 py-4 flex flex-row items-center gap-2"
+            onHoverStart={() => {
+              controls.start(shakeAnimation);
+              controls2.start(shakeAnimation2);
+            }}
+            onHoverEnd={() => {
+              controls.stop();
+              controls2.stop();
+            }}
+          >
+            <motion.span animate={controls}>
+              <IoIosCall />
+            </motion.span>
             Contact Us
-            <MdArrowRightAlt />
-          </p>
+            <motion.span animate={controls2}>
+              <MdArrowRightAlt />
+            </motion.span>
+          </motion.button>
         </div>
       </section>
       <Footer />

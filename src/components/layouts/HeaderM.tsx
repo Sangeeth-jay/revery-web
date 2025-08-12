@@ -45,7 +45,9 @@ export const HeaderM = () => {
             <hr className="text-white w-2/3" />
             <button
               type="button"
-              onClick={() => setIsOpen(false)}
+              onClick={() =>{
+                window.open("https://wa.me/+94725050191", "_blank");
+                setIsOpen(false)}}
               className="text-white text-sm font-thin w-2/3 bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-sm px-6 py-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
             >
               Contact Us
