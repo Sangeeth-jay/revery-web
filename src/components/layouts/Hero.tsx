@@ -49,7 +49,7 @@ const Hero: FC<HeroProps> = () => {
           <div className="flex flex-col gap-3">
             <h1
               className={cn(
-                "text-6xl md:text-5xl lg:text-6xl font-bold text-center"
+                "text-5xl md:text-5xl lg:text-6xl font-bold text-center"
               )}
             >
               {words.map((word, index) => (
