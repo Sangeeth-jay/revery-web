@@ -40,16 +40,16 @@ const Hero: FC<HeroProps> = () => {
           <HeaderF />
         </div>
       </nav>
-      <section id="home" className="h-screen relative w-full overflow-hidden">
+      <section id="home" className="h-screen w-full overflow-hidden">
         {/* <Boxes /> */}
         <div className="sticky top-0 lg:hidden">
           <HeaderM />
         </div>
-        <div className="h-screen flex flex-col items-center justify-center px-4 md:px-16 lg:px-32 ">
+        <div className="h-screen flex flex-col items-center justify-center px-4 md:px-16 lg:px-32">
           <div className="flex flex-col gap-3">
             <h1
               className={cn(
-                "text-4xl md:text-5xl lg:text-6xl font-bold text-center relative z-20"
+                "text-6xl md:text-5xl lg:text-6xl font-bold text-center"
               )}
             >
               {words.map((word, index) => (
@@ -79,7 +79,7 @@ const Hero: FC<HeroProps> = () => {
               </motion.span>
             </h1>
             <motion.h1
-              className="md:text-md lg:text-lg text-center relative z-20"
+              className="md:text-md lg:text-lg text-center "
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: words.length * 0.2, duration: 0.5 }}
@@ -88,7 +88,7 @@ const Hero: FC<HeroProps> = () => {
               staffing, taking your <br /> business from idea to implementation.
             </motion.h1>
             <motion.div
-              className="text-6xl self-center relative z-20"
+              className="text-6xl self-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: words.length * 0.2, duration: 0.5 }}
