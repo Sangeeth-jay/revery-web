@@ -1,7 +1,6 @@
 "use client";
 import { FC } from "react";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
-// import { Boxes } from "../ui/background-boxes";
 import IconStrip from "../ui/icon-strip";
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
