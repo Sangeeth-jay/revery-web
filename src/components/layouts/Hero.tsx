@@ -1,7 +1,7 @@
 "use client";
 import { FC } from "react";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
-import { Boxes } from "../ui/background-boxes";
+// import { Boxes } from "../ui/background-boxes";
 import IconStrip from "../ui/icon-strip";
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
@@ -41,7 +41,7 @@ const Hero: FC<HeroProps> = () => {
         </div>
       </nav>
       <section id="home" className="h-screen relative w-full overflow-hidden">
-        <Boxes />
+        {/* <Boxes /> */}
         <div className="sticky top-0 lg:hidden">
           <HeaderM />
         </div>
