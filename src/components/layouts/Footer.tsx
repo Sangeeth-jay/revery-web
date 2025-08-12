@@ -3,6 +3,7 @@ import Image from "next/image";
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { AiFillTikTok } from "react-icons/ai";
+import Link from "next/link";
 
 export const Footer = () => (
   <footer className="flex items-center justify-center w-full h-fit border-t px-4 md:px-16 lg:px-32 py-8">
@@ -11,9 +12,15 @@ export const Footer = () => (
         <div>
           <Image src={Logo} alt="logo" width={198} />
           <div className="w-full flex flex-row justify-around items-center gap-1">
-            <IoLogoFacebook className="text-4xl" />
-            <PiInstagramLogoFill className="text-4xl" />
-            <AiFillTikTok className="text-4xl" />
+            <Link href="https://www.facebook.com/share/1FgnYDTjrQ/?mibextid=wwXIfr">
+              <IoLogoFacebook className="text-4xl" />
+            </Link>
+            <Link href="https://www.instagram.com/revery.it">
+              <PiInstagramLogoFill className="text-4xl" />
+            </Link>
+            <Link href="https://www.tiktok.com/@revery.technologies?_t=ZS-8yoYNXbx2f4&_r=1">
+              <AiFillTikTok className="text-4xl" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start lg:items-start">
