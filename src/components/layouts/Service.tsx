@@ -4,26 +4,14 @@ import WebDevPic from "@/assesst/Item/web-designing.gif";
 import ProdDevPic from "@/assesst/Item/product-devlopment.gif";
 import DigiMarkPic from "@/assesst/Item/digital-marketing.gif";
 import UiUxPic from "@/assesst/Item/uiux-designing.gif";
-import { IoIosCall } from "react-icons/io";
-import { MdArrowRightAlt } from "react-icons/md";
 import { Footer } from "./Footer";
-import { motion, useAnimation } from "motion/react";
+import { motion } from "motion/react";
+import BigButton from "../ui/bigButton";
 
 type ComponentProps = unknown;
 
-const shakeAnimation = {
-  rotate: [0, -10, 10, -10, 10, 0],
-  transition: { duration: 0.5, repeat: Infinity, ease: "easeInOut" },
-};
-
-const shakeAnimation2 = {
-  x: [0, -5, 5, -5, 5, 0],
-  transition: { duration: 0.5, repeat: Infinity, ease: "easeInOut" },
-};
 
 const MyComponent: React.FC<ComponentProps> = () => {
-  const controls = useAnimation();
-  const controls2 = useAnimation();
 
   return (
     <>
@@ -151,28 +139,7 @@ const MyComponent: React.FC<ComponentProps> = () => {
           >
             Talk to our experts today.
           </h1>
-          <motion.button
-            onClick={() => {
-              window.open("https://wa.me/+94725050191", "_blank");
-            }}
-            className="group bg-[#FF0303] text-3xl font-bold text-white  cursor-pointer w-fit px-8 py-4 flex flex-row items-center gap-2"
-            onHoverStart={() => {
-              controls.start(shakeAnimation);
-              controls2.start(shakeAnimation2);
-            }}
-            onHoverEnd={() => {
-              controls.stop();
-              controls2.stop();
-            }}
-          >
-            <motion.span animate={controls}>
-              <IoIosCall />
-            </motion.span>
-            Contact Us
-            <motion.span animate={controls2}>
-              <MdArrowRightAlt />
-            </motion.span>
-          </motion.button>
+          <BigButton/>
         </div>
       </section>
       <Footer />
