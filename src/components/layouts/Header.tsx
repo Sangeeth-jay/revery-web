@@ -13,7 +13,7 @@ export const Header = () => {
           <div className="">
             <ul className="flex flex-row gap-6 text-lg text-[#0F072C]">
               <li className="dark:hover:text-neutral-300 hover:text-neutral-500">
-                <Link href="#about">About</Link>
+                <Link href="/About">About</Link>
               </li>
               <li className="dark:hover:text-neutral-300 hover:text-neutral-500">
                 <Link href="">Works</Link>

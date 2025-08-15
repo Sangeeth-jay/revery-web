@@ -39,7 +39,7 @@ export const HeaderM = () => {
               Works
             </Link>
             <hr className="text-white w-2/3" />
-            <Link href="#about" onClick={() => setIsOpen(false)}>
+            <Link href="/About" onClick={() => setIsOpen(false)}>
               About
             </Link>
             <hr className="text-white w-2/3" />
