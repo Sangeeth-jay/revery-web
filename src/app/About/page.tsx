@@ -124,7 +124,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           onAnimationComplete={() => setShowHeading2(true)}
           className="lg:h-screen w-full flex flex-col items-center justify-center gap-8 pb-4"

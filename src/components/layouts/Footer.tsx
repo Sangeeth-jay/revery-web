@@ -25,14 +25,14 @@ export const Footer = () => (
         </div>
         <div className="flex flex-col items-center md:items-start lg:items-start">
           <h1 className="font-bold">Company</h1>
-          <p className="font-thin">About</p>
-          <p className="font-thin">Service</p>
-          <p className="font-thin">Works</p>
+          <Link href="/About" className="font-thin">About</Link>
+          <Link href="/./#service" className="font-thin">Service</Link>
+          <Link href="/works" className="font-thin">Works</Link>
         </div>
         <div className="flex flex-col items-center md:items-start lg:items-start">
           <h1 className="font-bold">Legal</h1>
-          <p className="font-thin">Privacy Policy</p>
-          <p className="font-thin">Terms & Conditions</p>
+          <Link href="/Privacy_Policy" className="font-thin">Privacy Policy</Link>
+          <Link href="/Privacy_Policy" className="font-thin">Terms & Conditions</Link>
         </div>
       </div>
       <hr className="text-white w-full" />
